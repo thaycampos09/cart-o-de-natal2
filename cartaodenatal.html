@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 500px;
+        }
+        .header {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .message {
+            color: #34495e;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .gift-container {
+            margin-top: 20px;
+        }
+        .gift-button {
+            background-color: #e74c3c;
+            color: #ffffff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .gift-button:hover {
+            background-color: #c0392b;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">🎄 Feliz Natal! 🎄</div>
+        <div class="message">
+            <p>Caro Dr./Dra. <strong>[Nome do Cliente]</strong>,</p>
+            <p>Neste Natal, desejamos que você se permita uma pausa para refletir sobre o impacto que seu trabalho tem na vida das pessoas. Como ultrassonografista, você vê além do que os olhos alcançam, iluminando caminhos e promovendo saúde e esperança.</p>
+            <p>Que neste ano que se inicia, possamos continuar ao seu lado, oferecendo tecnologia, suporte e inovação para tornar sua rotina mais prática e eficaz.</p>
+            <p>Agradecemos pela parceria e confiança ao longo deste ano e desejamos a você e sua família um Natal repleto de paz, saúde e alegria.</p>
+            <p><strong>Clique no presente abaixo para uma surpresa especial!</strong></p>
+        </div>
+        <div class="gift-container">
+            <button class="gift-button" onclick="showGift()">🎁 Clique aqui para abrir seu presente 🎁</button>
+        </div>
+        <div id="gift-message" style="display:none; margin-top:20px; color:#27ae60; font-size:16px;">
+            <p><strong>Parabéns! 🎉</strong></p>
+            <p>Você ganhou <strong>10% de desconto</strong> em qualquer um dos nossos serviços:</p>
+            <ul style="text-align: left; margin: 0 auto; max-width: 400px;">
+                <li>Aplicação de equipamentos ultrassonográficos</li>
+                <li>Laudo de manutenção preventiva anual</li>
+                <li>Agentes personalizados para atendimento por IA</li>
+            </ul>
+            <p>🎅 <strong>Use o código: NATAL10 até 31/01/2024!</strong></p>
+            <p>Entre em contato conosco para resgatar seu desconto: <a href="mailto:contato@suempresa.com">contato@suempresa.com</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        function showGift() {
+            document.getElementById('gift-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
